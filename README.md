@@ -75,9 +75,9 @@ mkdir out
 Get-ChildItem -Recurse -Filter *.java -Path .\src\main\java | ForEach-Object { $_.FullName } > sources.txt
 javac -d out (Get-Content sources.txt)
 java -cp out com.devpatel.vcm.Main
-
-### Sample Session
 ```
+### Sample Session
+
 > add_classroom Math101
 Classroom Math101 has been created.
 
